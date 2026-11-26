@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Connect Contracting | Telecom Contracting in Egypt</title>
+<meta name="description" content="Connect Contracting: an Egyptian company specialized in telecom works: installation and commissioning of mobile sites, microwave links and Rollout works for mobile networks." />
+<link rel="canonical" href="https://www.connect-cont.com/en/">
+<link rel="alternate" hreflang="ar" href="https://www.connect-cont.com/">
+<link rel="alternate" hreflang="en" href="https://www.connect-cont.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://www.connect-cont.com/">
+<link rel="stylesheet" href="/cairo.css">
+<style>
+:root{
+  --navy:#0b1f3a; --navy2:#122c52; --cyan:#22b8e6; --cyan2:#0e8fc0;
+  --ink:#1c2733; --muted:#5b6b7d; --line:#e6ecf3; --bg:#f7fafc; --card:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',Tahoma,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+/* ===== Header ===== */
+header{position:sticky;top:0;z-index:50;background:rgba(11,31,58,.96);backdrop-filter:blur(6px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}
+.brand .logo-img{background:#fff;border-radius:10px;padding:5px 12px;display:grid;place-items:center}
+.brand .logo-img img{height:32px;width:auto;display:block}
+.brand b{font-size:19px;font-weight:800}
+.brand small{display:block;font-size:11px;color:#9db4cc;font-weight:600;letter-spacing:1px}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{color:#d7e4f2;text-decoration:none;font-weight:600;font-size:15px}
+.nav-links a:hover{color:var(--cyan)}
+@media(max-width:760px){.nav-links{display:none}}
+/* ===== Hero ===== */
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 60%,#0d4a6e 100%);color:#fff;overflow:hidden;position:relative}
+.hero::after{content:"";position:absolute;inset:0;background:
+  radial-gradient(600px 300px at 85% 20%,rgba(34,184,230,.18),transparent 60%),
+  radial-gradient(500px 260px at 10% 90%,rgba(34,184,230,.12),transparent 60%);pointer-events:none}
+.hero-inner{position:relative;z-index:1;padding:90px 0 80px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+@media(max-width:860px){.hero-inner{grid-template-columns:1fr;padding:60px 0}}
+.hero .tag{display:inline-block;background:rgba(34,184,230,.15);border:1px solid rgba(34,184,230,.4);color:#9fe3fa;padding:6px 16px;border-radius:999px;font-size:14px;font-weight:700;margin-bottom:18px}
+.hero h1{font-size:clamp(30px,4.6vw,48px);font-weight:900;line-height:1.35;margin-bottom:16px}
+.hero h1 span{color:var(--cyan)}
+.hero p.lead{font-size:18px;color:#c9d9ea;max-width:560px;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 30px;border-radius:12px;font-weight:800;font-size:16px;text-decoration:none;transition:.2s}
+.btn-primary{background:linear-gradient(135deg,var(--cyan),var(--cyan2));color:#04283b}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{border:2px solid rgba(255,255,255,.35);color:#fff}
+.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan)}
+.hero-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:28px}
+.hero-card h3{color:#9fe3fa;font-size:15px;margin-bottom:14px;font-weight:700}
+.hero-card ul{list-style:none}
+.hero-card li{padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.14);color:#e6eff8;font-size:15px;display:flex;gap:10px;align-items:center}
+.hero-card li:last-child{border:0}
+.hero-card li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--cyan);flex:none}
+/* ===== Sections ===== */
+section{padding:72px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 48px}
+.sec-head .kicker{color:var(--cyan2);font-weight:800;font-size:14px;letter-spacing:1px;margin-bottom:8px}
+.sec-head h2{font-size:clamp(24px,3.4vw,34px);font-weight:900;color:var(--navy)}
+.sec-head p{color:var(--muted);margin-top:10px}
+/* Coverage */
+.cov-grid{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+.cov-grid span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-weight:700;font-size:15px;color:var(--navy)}
+.teams-note{text-align:center;margin-top:22px;color:var(--muted);font-size:15px}
+.teams-note strong{color:var(--cyan2)}
+/* About */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr}}
+.about-grid h3{color:var(--navy);font-size:22px;margin-bottom:12px;font-weight:800}
+.about-grid p{color:var(--muted);margin-bottom:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center}
+.stat b{display:block;color:var(--navy);font-size:17px;font-weight:800}
+.stat span{font-size:13px;color:var(--muted)}
+/* Services */
+.services{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:960px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.svc-grid{grid-template-columns:1fr}}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;transition:.2s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(11,31,58,.08);border-color:#cfe7f2}
+.svc .icon{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,rgba(34,184,230,.16),rgba(34,184,230,.05));display:grid;place-items:center;font-size:24px;margin-bottom:14px}
+.svc h3{color:var(--navy);font-size:18px;font-weight:800;margin-bottom:8px}
+.svc p{color:var(--muted);font-size:14.5px}
+/* Why us */
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(max-width:700px){.why-grid{grid-template-columns:1fr}}
+.why{display:flex;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.why .n{flex:none;width:44px;height:44px;border-radius:12px;background:var(--navy);color:var(--cyan);display:grid;place-items:center;font-weight:900;font-size:18px}
+.why h3{color:var(--navy);font-size:16.5px;font-weight:800;margin-bottom:4px}
+.why p{color:var(--muted);font-size:14px}
+/* Process */
+.process{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff}
+.process .sec-head h2{color:#fff}
+.process .sec-head p{color:#b7cade}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:st}
+@media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+.step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:24px;position:relative}
+.step::before{counter-increment:st;content:counter(st);position:absolute;top:-14px;inset-inline-start:20px;width:30px;height:30px;border-radius:50%;background:var(--cyan);color:#04283b;font-weight:900;display:grid;place-items:center}
+.step h3{font-size:16px;font-weight:800;margin:8px 0 6px;color:#e8f3fb}
+.step p{font-size:13.5px;color:#b7cade}
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+.c-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.c-item{display:flex;gap:14px;align-items:center;padding:13px 0;border-bottom:1px dashed var(--line)}
+.c-item:last-child{border:0}
+.c-item .ic{width:44px;height:44px;border-radius:12px;background:rgba(34,184,230,.12);display:grid;place-items:center;font-size:20px;flex:none}
+.c-item b{display:block;color:var(--navy);font-size:15px}
+.c-item a,.c-item span.v{color:var(--muted);font-size:15px;text-decoration:none;direction:ltr;unicode-bidi:plaintext}
+.c-item a:hover{color:var(--cyan2)}
+form{display:grid;gap:14px}
+input,textarea{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:12px;font-family:inherit;font-size:15px;background:#fbfdfe}
+input:focus,textarea:focus{outline:2px solid rgba(34,184,230,.5);border-color:var(--cyan)}
+textarea{min-height:120px;resize:vertical}
+form button{border:0;cursor:pointer;font-family:inherit}
+/* Footer */
+footer{background:var(--navy);color:#9db4cc;padding:30px 0;font-size:14px}
+footer .container{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+footer b{color:#fff}
+.lang{color:#fff;border:1px solid rgba(255,255,255,.35);padding:5px 16px;border-radius:999px;font-size:14px;font-weight:700;text-decoration:none;margin-inline-start:18px;white-space:nowrap}.lang:hover{color:var(--cyan);border-color:var(--cyan)}
+.nav-right{display:flex;align-items:center}
+@media(max-width:760px){.brand small{display:none}.brand b{font-size:16px;white-space:nowrap}.brand .logo-img{padding:4px 10px}.brand .logo-img img{height:28px}.lang{margin-inline-start:8px;padding:4px 12px;font-size:13px}}
+</style>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/logo-icon-180.png">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top">
+      <span class="logo-img"><img src="/logo.png" alt="Connect Contracting"></span>
+      <span><b>Connect Contracting</b><small>TELECOM CONTRACTING</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Connect</a></li>
+      <li><a href="#process">How We Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="lang" href="/" hreflang="ar" lang="ar">العربية</a>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="container hero-inner">
+    <div>
+      <span class="tag">Telecom Contracting — Egypt</span>
+      <h1>We deliver telecom sites <span>from the first link to final handover</span></h1>
+      <p class="lead">Connect Contracting is an Egyptian company specialized in telecom works, working as a subcontractor to leading contractors who serve mobile network operators: installation, commissioning and handover to approved quality standards.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#contact">Request a Quote</a>
+        <a class="btn btn-ghost" href="#services">View Our Services</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Our Core Areas of Work</h3>
+      <ul>
+        <li>Mobile site Rollout works (Link + Radio)</li>
+        <li>Microwave link installation and alignment</li>
+        <li>Radio and Baseband equipment installation and commissioning</li>
+        <li>Provisional and final acceptance (PAC / FAC)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container about-grid">
+    <div>
+      <div class="sec-head" style="text-align:left;margin:0 0 18px">
+        <div class="kicker">About Us</div>
+        <h2>A dependable delivery partner for network works</h2>
+      </div>
+      <p>Connect Contracting is an Egyptian company working in telecom contracting. We deliver Rollout sites for mobile networks as a subcontractor to general contractors who work with the largest network operators in Egypt.</p>
+      <p>Our team covers every stage of delivery: from installing links and radio equipment, to commissioning, until the site passes final acceptance (FAC) and is formally handed over.</p>
+      <div class="stats">
+        <div class="stat"><b>B2B</b><span>Business clients only</span></div>
+        <div class="stat"><b>Link + Radio</b><span>End-to-end delivery</span></div>
+        <div class="stat"><b>Ericsson</b><span>Baseband expertise</span></div>
+      </div>
+    </div>
+    <div class="c-card" style="background:linear-gradient(160deg,var(--navy),var(--navy2));border:0;color:#dbe8f5">
+      <h3 style="color:#fff;margin-bottom:14px">Our Commitment on Every Site</h3>
+      <div class="c-item" style="border-color:rgba(255,255,255,.15)"><div class="ic" style="background:rgba(34,184,230,.15)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#22b8e6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5a4.5 4.5 0 0 0-6 5.6L3 17.6a2.1 2.1 0 0 0 3 3l5.5-5.5a4.5 4.5 0 0 0 5.6-6l-3 3-2.5-.6-.6-2.5 3.5-2.5z"/></svg></div><div><b style="color:#fff">Right the first time</b><span style="color:#b7cade;font-size:14px">Work that follows the LLD and approved standards so the site passes acceptance with no remarks.</span></div></div>
+      <div class="c-item" style="border-color:rgba(255,255,255,.15)"><div class="ic" style="background:rgba(34,184,230,.15)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#22b8e6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M9 15l2 2 4-4"/></svg></div><div><b style="color:#fff">Clear tracking and scheduling</b><span style="color:#b7cade;font-size:14px">Status tracking for every site with an assigned coordinator and engineer, and regular reports to the general contractor.</span></div></div>
+      <div class="c-item" style="border:0"><div class="ic" style="background:rgba(34,184,230,.15)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#22b8e6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg></div><div><b style="color:#fff">Delivery through FAC</b><span style="color:#b7cade;font-size:14px">We hand over a site only once it fully meets the final acceptance conditions.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="sec-head">
+      <div class="kicker">Services</div>
+      <h2>The Telecom Services We Provide</h2>
+      <p>Complete field and technical delivery for mobile network sites, from installation to handover.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-8"/><path d="M12 12l-4 8"/><path d="M12 12l4 8"/><circle cx="12" cy="9" r="1.6"/><path d="M8.5 5.5a5 5 0 0 1 7 0"/><path d="M6 3a9 9 0 0 1 12 0"/></svg></div><h3>Microwave Link Installation and Alignment</h3><p>Supply, installation and alignment of microwave links between sites, with signal tuning for the best link performance. We specialize most in <strong>Huawei</strong> links.</p></div>
+      <div class="svc"><div class="icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21l4-18 4 18"/><path d="M9.5 14h5"/><path d="M10.2 10h3.6"/><path d="M6 21h12"/></svg></div><h3>Radio Equipment (RBS) Installation</h3><p>Installation and connection of radio units and antennas on towers and ground sites according to the site design and the LLD.</p></div>
+            <div class="svc"><div class="icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></svg></div><h3>Commissioning and Operation</h3><p>Bringing sites on air and testing them (Integration & Commissioning) and making sure they enter service without faults.</p></div>
+      <div class="svc"><div class="icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v5h-5"/></svg></div><h3>Rollout and Modernization Works</h3><p>Delivering new Rollout sites and network modernization and expansion works (Swap / Modernization) for mobile operators.</p></div>
+      <div class="svc"><div class="icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2.8A.8.8 0 0 1 9.8 2h4.4a.8.8 0 0 1 .8.8V4"/><path d="M9 11l2 2 4-4"/></svg></div><h3>Provisional and Final Acceptance</h3><p>Preparing sites for PAC acceptance tests and closing all remarks until final acceptance (FAC) is obtained.</p></div>
+    </div>
+    <p class="teams-note">We can carry out all types of field actions on sites, whether <strong>Rollout</strong> or <strong>Radio Expansion</strong>, on <strong>Huawei</strong> or <strong>Ericsson</strong> equipment.</p>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <div class="sec-head">
+      <div class="kicker">Why Connect</div>
+      <h2>Why Do Companies Choose Connect Contracting?</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why"><div class="n">1</div><div><h3>Real Field Experience</h3><p>A team that has worked on live Rollout sites for major mobile networks in Egypt and knows the work in detail, from the tower to the equipment room. Since 2019 we have delivered a very large number of microwave links and a very large number of new sites (New Sites).</p></div></div>
+      <div class="why"><div class="n">2</div><div><h3>Full Understanding of the Acceptance Cycle</h3><p>We know the PAC and FAC requirements and prepare the site from day one so it passes acceptance without delay.</p></div></div>
+      <div class="why"><div class="n">3</div><div><h3>Organized Follow-up on Every Site</h3><p>Every site is logged with its status, coordinator and responsible engineer, and clear reports go to the general contractor as work progresses.</p></div></div>
+      <div class="why"><div class="n">4</div><div><h3>Subcontractor Flexibility</h3><p>We work smoothly alongside the general contractor's teams and keep to the schedules and technical standards of the end operator.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="container">
+    <div class="sec-head">
+      <div class="kicker">How We Work</div>
+      <h2>How a Site Moves Through Our Work</h2>
+      <p>A clear delivery cycle from receiving the site to final handover.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Site Receipt and Review</h3><p>Reviewing the site files and the LLD, and assigning the responsible engineer and coordinator and the execution plan.</p></div>
+      <div class="step"><h3>Field Installation</h3><p>Installing links, radio and Baseband equipment and site connections according to the design.</p></div>
+      <div class="step"><h3>Commissioning and Testing</h3><p>Bringing the site on air and testing its performance before acceptance.</p></div>
+      <div class="step"><h3>Acceptance and Handover</h3><p>Preparing the site for PAC, closing any remarks, and following up until final acceptance (FAC).</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="coverage">
+  <div class="container">
+    <div class="sec-head">
+      <div class="kicker">Coverage Area</div>
+      <h2>We Cover the Delta Governorates and Alexandria</h2>
+      <p>Two field teams (2 teams), scalable with project size, delivering sites across all Delta governorates and Alexandria.</p>
+    </div>
+    <div class="cov-grid">
+      <span>Dakahlia</span><span>Gharbia</span><span>Menoufia</span><span>Sharqia</span><span>Qalyubia</span><span>Kafr El Sheikh</span><span>Beheira</span><span>Damietta</span><span>Alexandria</span>
+    </div>
+    <p class="teams-note">Current number of teams: <strong>2</strong>, at the highest level. All members are trained and qualified, hold <strong>Work at Height (WAH)</strong> certification and have completed Medical Checks. Teams can grow as projects expand.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact-grid">
+    <div>
+      <div class="sec-head" style="text-align:left;margin:0 0 18px">
+        <div class="kicker">Contact Us</div>
+        <h2>Have Sites That Need Delivery? Talk to Us</h2>
+      </div>
+      <p style="color:var(--muted);margin-bottom:20px">If you are a contracting company or supplier and need a subcontractor specialized in telecom works, send us the details of the work and we will reply with a clear offer.</p>
+      <div class="c-card">
+        <div class="c-item"><div class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><div><b>Email</b><a href="mailto:ayman.darwesh@connect-cont.com">ayman.darwesh@connect-cont.com</a></div></div>
+        <div class="c-item"><div class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></div><div><b>Phone / WhatsApp</b><a href="https://wa.me/201010645565" target="_blank" rel="noopener">+20 101 064 5565</a></div></div>
+        <div class="c-item" style="border:0"><div class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.4-6.5-10.5a6.5 6.5 0 0 1 13 0C18.5 15.6 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.2"/></svg></div><div><b>Company Location</b><span class="v">Arab Republic of Egypt</span></div></div>
+      </div>
+    </div>
+    <div class="c-card">
+      <h3 style="color:var(--navy);font-weight:800;margin-bottom:16px">Send Your Request</h3>
+      <form action="mailto:ayman.darwesh@connect-cont.com" method="post" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Your name / company name" required>
+        <input type="email" name="Email" placeholder="Email address" required>
+        <input type="text" name="Subject" placeholder="Type of work needed (e.g. link installation for a site)">
+        <textarea name="Details" placeholder="Describe the work: number of sites, governorate, required date..." required></textarea>
+        <button class="btn btn-primary" type="submit">Send Request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div><b>Connect Contracting</b></div>
+    <div>© 2026 All rights reserved</div>
+  </div>
+</footer>
+
+</body>
+</html>
