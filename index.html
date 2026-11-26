@@ -55,6 +55,11 @@ section{padding:72px 0}
 .sec-head .kicker{color:var(--cyan2);font-weight:800;font-size:14px;letter-spacing:1px;margin-bottom:8px}
 .sec-head h2{font-size:clamp(24px,3.4vw,34px);font-weight:900;color:var(--navy)}
 .sec-head p{color:var(--muted);margin-top:10px}
+/* Coverage */
+.cov-grid{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+.cov-grid span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-weight:700;font-size:15px;color:var(--navy)}
+.teams-note{text-align:center;margin-top:22px;color:var(--muted);font-size:15px}
+.teams-note strong{color:var(--cyan2)}
 /* About */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
 @media(max-width:860px){.about-grid{grid-template-columns:1fr}}
@@ -148,7 +153,6 @@ footer b{color:#fff}
         <li>أعمال Rollout لمواقع الموبايل (Link + Radio)</li>
         <li>تركيب ومعايرة لينكات المايكروويف</li>
         <li>تركيب وتشغيل أجهزة الراديو والـ Baseband</li>
-        <li>سكريبتات Ericsson Baseband 6631</li>
         <li>الاستلام الابتدائي والنهائي (PAC / FAC)</li>
       </ul>
     </div>
@@ -163,7 +167,7 @@ footer b{color:#fff}
         <h2>شريك تنفيذ يعتمد عليه في أعمال الشبكات</h2>
       </div>
       <p>كونكت للمقاولات (Connect Contracting) شركة مصرية بتشتغل في مجال مقاولات الاتصالات، وبننفذ مواقع الـ Rollout لشبكات المحمول كمقاول باطن مع شركات المقاولات العامة اللي بتشتغل مع أكبر مشغلي الشبكات في مصر.</p>
-      <p>فريقنا بيغطي مراحل التنفيذ كلها: من تركيب اللينكات وأجهزة الراديو، لكتابة سكريبتات التشغيل والـ Commissioning، لحد ما الموقع يعدي الاستلام النهائي FAC ويتسلم رسمي.</p>
+      <p>فريقنا بيغطي مراحل التنفيذ كلها: من تركيب اللينكات وأجهزة الراديو، للتشغيل والـ Commissioning، لحد ما الموقع يعدي الاستلام النهائي FAC ويتسلم رسمي.</p>
       <div class="stats">
         <div class="stat"><b>B2B</b><span>شغل شركات فقط</span></div>
         <div class="stat"><b>Link + Radio</b><span>تنفيذ متكامل</span></div>
@@ -187,13 +191,13 @@ footer b{color:#fff}
       <p>تنفيذ ميداني وفني متكامل لمواقع شبكات الموبايل، من التركيب لحد التسليم.</p>
     </div>
     <div class="svc-grid">
-      <div class="svc"><div class="icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-8"/><path d="M12 12l-4 8"/><path d="M12 12l4 8"/><circle cx="12" cy="9" r="1.6"/><path d="M8.5 5.5a5 5 0 0 1 7 0"/><path d="M6 3a9 9 0 0 1 12 0"/></svg></div><h3>تركيب ومعايرة لينكات المايكروويف</h3><p>توريد وتركيب ومحاذاة (Alignment) لينكات المايكروويف بين المواقع، وضبط الإشارة لتحقيق أفضل أداء للرابط.</p></div>
+      <div class="svc"><div class="icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-8"/><path d="M12 12l-4 8"/><path d="M12 12l4 8"/><circle cx="12" cy="9" r="1.6"/><path d="M8.5 5.5a5 5 0 0 1 7 0"/><path d="M6 3a9 9 0 0 1 12 0"/></svg></div><h3>تركيب ومعايرة لينكات المايكروويف</h3><p>توريد وتركيب ومحاذاة (Alignment) لينكات المايكروويف بين المواقع، وضبط الإشارة لتحقيق أفضل أداء للرابط — وإحنا متخصصين أكتر في لينكات <strong>هواوي</strong>.</p></div>
       <div class="svc"><div class="icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21l4-18 4 18"/><path d="M9.5 14h5"/><path d="M10.2 10h3.6"/><path d="M6 21h12"/></svg></div><h3>تركيب أجهزة الراديو (RBS)</h3><p>تركيب وتوصيل وحدات الراديو والهوائيات على الأبراج والمواقع الأرضية طبقاً لتصميم الموقع والـ LLD.</p></div>
-      <div class="svc"><div class="icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M9 9l-2 2 2 2"/><path d="M15 9l2 2-2 2"/><path d="M8 21h8"/></svg></div><h3>سكريبتات Ericsson Baseband 6631</h3><p>إعداد وكتابة سكريبتات التشغيل لوحدات Ericsson Baseband 6631 من ملفات الـ LLD، جاهزة للتحميل والتشغيل على الموقع.</p></div>
-      <div class="svc"><div class="icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></svg></div><h3>Commissioning والتشغيل</h3><p>تشغيل المواقع واختبارها (Integration & Commissioning) والتأكد من دخولها الخدمة بدون أعطال.</p></div>
+            <div class="svc"><div class="icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></svg></div><h3>Commissioning والتشغيل</h3><p>تشغيل المواقع واختبارها (Integration & Commissioning) والتأكد من دخولها الخدمة بدون أعطال.</p></div>
       <div class="svc"><div class="icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v5h-5"/></svg></div><h3>أعمال الـ Rollout والتحديث</h3><p>تنفيذ مواقع الـ Rollout الجديدة وأعمال تحديث وتوسعة الشبكات (Swap / Modernization) لمشغلي المحمول.</p></div>
       <div class="svc"><div class="icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0e8fc0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2.8A.8.8 0 0 1 9.8 2h4.4a.8.8 0 0 1 .8.8V4"/><path d="M9 11l2 2 4-4"/></svg></div><h3>الاستلام الابتدائي والنهائي</h3><p>تجهيز المواقع لاختبارات الاستلام PAC واستيفاء الملاحظات لحد الحصول على الاستلام النهائي FAC.</p></div>
     </div>
+    <p class="teams-note">بنقدر نشغّل كل أنواع الأكشنات الميدانية على المواقع — سواء <strong>Rollout</strong> أو <strong>Radio Expansion</strong> — وعلى أجهزة <strong>هواوي</strong> أو <strong>إريكسون</strong>.</p>
   </div>
 </section>
 
@@ -204,7 +208,7 @@ footer b{color:#fff}
       <h2>ليه الشركات تختار كونكت للمقاولات؟</h2>
     </div>
     <div class="why-grid">
-      <div class="why"><div class="n">1</div><div><h3>خبرة ميدانية حقيقية</h3><p>فريق اشتغل على مواقع Rollout فعلية لشبكات محمول كبرى في مصر، وعارف تفاصيل الشغل من البرج لحد غرفة الأجهزة.</p></div></div>
+      <div class="why"><div class="n">1</div><div><h3>خبرة ميدانية حقيقية</h3><p>فريق اشتغل على مواقع Rollout فعلية لشبكات محمول كبرى في مصر، وعارف تفاصيل الشغل من البرج لحد غرفة الأجهزة. ومن ٢٠١٩ نفذنا عدد كبير جدا من لينكات المايكروويف وعدد كبير جدا من المواقع الجديدة (New Sites).</p></div></div>
       <div class="why"><div class="n">2</div><div><h3>فهم كامل لدورة الاستلام</h3><p>عارفين متطلبات الـ PAC والـ FAC وبنجهز الموقع من أول يوم عشان يعدي الاستلام بدون تأخير.</p></div></div>
       <div class="why"><div class="n">3</div><div><h3>متابعة منظمة لكل موقع</h3><p>كل موقع متسجل بحالته والمنسق والمهندس المسؤول عنه، وبيقدم تقارير واضحة للمقاول العام أول بأول.</p></div></div>
       <div class="why"><div class="n">4</div><div><h3>مرونة مقاول باطن</h3><p>بنشتغل جنب فرق المقاول العام بسلاسة، ونلتزم بالجداول والمعايير الفنية للمشغل النهائي.</p></div></div>
@@ -222,9 +226,24 @@ footer b{color:#fff}
     <div class="steps">
       <div class="step"><h3>استلام الموقع والمراجعة</h3><p>مراجعة ملفات الموقع والـ LLD وتحديد المهندس والمنسق المسؤولين وخطة التنفيذ.</p></div>
       <div class="step"><h3>التركيب الميداني</h3><p>تركيب اللينكات وأجهزة الراديو والـ Baseband وتوصيلات الموقع طبقاً للتصميم.</p></div>
-      <div class="step"><h3>التشغيل والاختبار</h3><p>كتابة سكريبت التشغيل، تحميله، وتشغيل الموقع واختبار أدائه قبل الاستلام.</p></div>
+      <div class="step"><h3>التشغيل والاختبار</h3><p>تشغيل الموقع واختبار أدائه قبل الاستلام.</p></div>
       <div class="step"><h3>الاستلام والتسليم</h3><p>تجهيز الموقع للـ PAC، استيفاء أي ملاحظات، والمتابعة لحد الاستلام النهائي FAC.</p></div>
     </div>
+  </div>
+</section>
+
+
+<section id="coverage">
+  <div class="container">
+    <div class="sec-head">
+      <div class="kicker">منطقة التغطية</div>
+      <h2>بنغطي محافظات الدلتا والإسكندرية</h2>
+      <p>فريقان ميدانيان (٢ تيم) قابلين للزيادة حسب حجم المشروع، لتنفيذ المواقع في كل محافظات الدلتا والإسكندرية.</p>
+    </div>
+    <div class="cov-grid">
+      <span>الدقهلية</span><span>الغربية</span><span>المنوفية</span><span>الشرقية</span><span>القليوبية</span><span>كفر الشيخ</span><span>البحيرة</span><span>دمياط</span><span>الإسكندرية</span>
+    </div>
+    <p class="teams-note">عدد التيمات الحالي <strong>٢</strong> — على أعلى مستوى وكلهم مدربين ومؤهلين وواخدين كورسات <strong>Work at Height (WAH)</strong> وعاملين الفحوصات الطبية (Medical Checks)، وقابلين للزيادة مع توسع المشاريع.</p>
   </div>
 </section>
 
