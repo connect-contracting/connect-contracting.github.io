@@ -159,6 +159,11 @@ footer b{color:#fff}
 footer a{color:#9db4cc;text-decoration:none;font-weight:600}footer a:hover{color:var(--cyan)}
 @media(max-width:760px){.menu-btn{display:block}.nav-links{display:none;position:absolute;top:68px;inset-inline:0;flex-direction:column;gap:0;background:#0b1f3a;border-top:1px solid rgba(255,255,255,.1);padding:6px 20px 12px;box-shadow:0 12px 24px rgba(0,0,0,.25)}.nav-links.open{display:flex}.nav-links li a{display:block;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:16px}.nav-links li:last-child a{border:0}}
 @media(max-width:760px){.brand{gap:6px}.brand b{font-size:14px}.lang{margin-inline-start:6px;padding:4px 10px;font-size:12.5px}.menu-btn{width:34px;margin-inline-start:6px}}
+.post-search{display:block;width:100%;max-width:420px;margin:0 auto 28px;padding:11px 16px;border:1.5px solid var(--line);border-radius:12px;font:inherit;font-size:15px}
+.post.more{display:none}.post.show,.post-grid.searching .post.hit{display:flex}
+.post-grid.searching .post:not(.hit){display:none}
+.more-wrap{text-align:center;margin-top:28px}.more-wrap button{font:inherit;font-weight:800;font-size:15px;padding:11px 32px;border-radius:12px;border:1.5px solid var(--cyan2);background:#fff;color:var(--cyan2);cursor:pointer}
+.post .body p+p{margin-top:8px}.no-hit{text-align:center;color:var(--muted);margin-top:20px;display:none}
 </style>
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/logo-icon-180.png">
@@ -189,6 +194,7 @@ footer a{color:#9db4cc;text-decoration:none;font-weight:600}footer a:hover{color
 <section class="library" id="articles" style="border:0">
   <div class="container">
     <div class="sec-head"><div class="kicker">مقالات تقنية</div><h2>مقالات من قناة Telecom Engineering</h2><p>مختارات تعليمية من منشورات المهندس Mohamed Saeed في الاتصالات والـ Optical والـ DWDM.</p></div>
+    <input class="post-search" id="post-search" type="search" placeholder="ابحث في المقالات (مثال: DWDM، OSPF، Raman)" aria-label="ابحث في المقالات">
     <div class="post-grid">
       <article class="post"><div class="meta">24 نوفمبر 2026 · بقلم Mohamed Saeed</div><h4>ماذا يحدث عندما تفتح بريدك الإلكتروني؟</h4><p>ايه اللي بيحصل لما تفتح ايميلك واذاي عمليه بسيطه ذي دي وراها تفاصيل هندسيه كتير</p><p>بوست شرح بشكل مميز عن الموضوع بالكامل</p><div class="acts"><a class="dl" href="https://www.facebook.com/share/18kg8JtokS/?mibextid=wwXIfr" target="_blank" rel="noopener">المنشور الأصلي</a><a href="https://t.me/mohamedsaeed4Telecom/2846" target="_blank" rel="noopener">على تيليجرام</a></div></article>
       <article class="post"><div class="meta">24 نوفمبر 2026 · بقلم Mohamed Saeed</div><h4>ضوضاء ASE في تقنية DWDM</h4><p>في تكنولوجيا dwdm بنربط قواعد البيانات علي مستوي المدن باستخدام مايسمي بال Terrestrial او الربط الارضي والنوع الثاني هو الربط البحري ويسمي subsea ولاننا بنبعت لمسافات طويله بيحصل فقد للاشاره بيسمي attenuation وبيتم تعويضه بال Gain من خلال ال amplifier وفي نوعين أساسين من ال amplifiers وهم EDFA و Raman<br>ال EDFA بينتج عنه noise اسمها ASE<br>لكن بيحصل تشابه بينها وبين حاجه تانيه اسمها idler ASE ودي اكتر من مهندس سالني عنها ومهمه في الانترفيو فشرحت الموضوع كاملا في بوست اتمني يفيدكم</p><div class="acts"><a class="dl" href="https://lnkd.in/p/eRJEMJYA" target="_blank" rel="noopener">المنشور الأصلي</a><a href="https://t.me/mohamedsaeed4Telecom/2845" target="_blank" rel="noopener">على تيليجرام</a></div></article>
@@ -199,6 +205,8 @@ footer a{color:#9db4cc;text-decoration:none;font-weight:600}footer a:hover{color
       <article class="post"><div class="meta">7 نوفمبر 2026 · بقلم Mohamed Saeed</div><h4>كيف تعمل شاشات اللمس</h4><p>اذاي ال touch screen بتشتغل وعلاقتها بهندسه الالكترونيات <br>وانواع ال touch screen ونظريه عملها بشكل مبسط</p><div class="acts"><a class="dl" href="https://www.facebook.com/share/18YKasrHAh/?mibextid=wwXIfr" target="_blank" rel="noopener">المنشور الأصلي</a><a href="https://t.me/mohamedsaeed4Telecom/2832" target="_blank" rel="noopener">على تيليجرام</a></div></article>
       <article class="post"><div class="meta">3 نوفمبر 2026 · بقلم Mohamed Saeed</div><h4>Linux وإدارة الشبكات: ما يحتاجه مهندس الـ NOC</h4><p>هل كمهندسين اتصالات بنحتاج Linux وايه علاقه linux بال Network Mangment ووظايف ال NOC وماهي اهم ال commands المستخدمة</p><p>بوست مهم شرحت فيه النقاط دي ومفيد لاي مهندس بيشتغل في ال noc سواء tac او back office او 2nd line او network admin</p><p>هكمل في نفس الموضوع في بوست تاني</p><div class="acts"><a class="dl" href="https://lnkd.in/p/egsinM3A" target="_blank" rel="noopener">المنشور الأصلي</a><a href="https://t.me/mohamedsaeed4Telecom/2829" target="_blank" rel="noopener">على تيليجرام</a></div></article>
     </div>
+    <p class="no-hit" id="no-hit">لا توجد نتائج مطابقة.</p>
+    <div class="more-wrap"><button type="button" id="more-btn">عرض المزيد</button></div>
     <p class="lib-note">جميع الحقوق محفوظة للمهندس Mohamed Saeed. المحتوى منشور بإذنه ومنسوب إليه. <a href="https://t.me/mohamedsaeed4Telecom" target="_blank" rel="noopener">قناته على تيليجرام</a></p>
   </div>
 </section>
@@ -211,6 +219,16 @@ footer a{color:#9db4cc;text-decoration:none;font-weight:600}footer a:hover{color
   </div>
 </footer>
 
+<script src="/articles/posts.js"></script>
+<script>(function(){var g=document.querySelector('.post-grid'),P=window.MORE_POSTS||[],btn=document.getElementById('more-btn'),q=document.getElementById('post-search'),nh=document.getElementById('no-hit');
+function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function paras(t){return t.split(/\n\s*\n/).map(function(x){return '<p>'+esc(x.trim()).replace(/\n/g,'<br>')+'</p>'}).join('')}
+P.forEach(function(p){var a=document.createElement('article');a.className='post more';a.innerHTML='<div class="meta">'+esc(p[1])+' · بقلم Mohamed Saeed</div><h4>'+esc(p[2])+'</h4>'+(p[3]?'<div class="body">'+paras(p[3])+'</div>':'')+'<div class="acts">'+(p[4]?'<a class="dl" href="'+esc(p[4])+'" target="_blank" rel="noopener">المنشور الأصلي</a>':'')+'<a href="https://t.me/mohamedsaeed4Telecom/'+p[0]+'" target="_blank" rel="noopener">على تيليجرام</a></div>';g.appendChild(a)});
+var all=[].slice.call(g.querySelectorAll('.post'));
+function more(n){var m=g.querySelectorAll('.post.more:not(.show)');for(var i=0;i<m.length&&i<n;i++)m[i].classList.add('show');if(!g.querySelector('.post.more:not(.show)'))btn.parentNode.style.display='none'}
+more(16);btn.addEventListener('click',function(){more(24)});
+q.addEventListener('input',function(){var v=q.value.trim().toLowerCase(),c=0;if(!v){g.classList.remove('searching');nh.style.display='none';btn.parentNode.style.display=g.querySelector('.post.more:not(.show)')?'':'none';return}
+g.classList.add('searching');btn.parentNode.style.display='none';all.forEach(function(a){var h=a.textContent.toLowerCase().indexOf(v)>-1;a.classList.toggle('hit',h);if(h)c++});nh.style.display=c?'none':'block'})})();</script>
 <script>(function(){var b=document.querySelector('.menu-btn'),l=document.querySelector('.nav-links');if(!b||!l)return;b.addEventListener('click',function(){var o=l.classList.toggle('open');b.setAttribute('aria-expanded',o)});l.addEventListener('click',function(e){if(e.target.tagName==='A')l.classList.remove('open')})})();</script>
 </body>
 </html>
