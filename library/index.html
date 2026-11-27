@@ -146,6 +146,10 @@ footer b{color:#fff}
 .book .acts a:hover{transform:translateY(-1px)}
 .book .nodl{color:var(--muted);font-size:12.5px;margin-top:2px}
 .lib-note{text-align:center;color:var(--muted);font-size:13.5px;margin-top:28px}
+/* Mobile menu */
+.menu-btn{display:none;background:none;border:1px solid rgba(255,255,255,.35);color:#fff;width:38px;height:34px;border-radius:10px;margin-inline-start:8px;cursor:pointer;font-size:20px;line-height:1;padding:0;font-family:inherit}
+footer a{color:#9db4cc;text-decoration:none;font-weight:600}footer a:hover{color:var(--cyan)}
+@media(max-width:760px){.menu-btn{display:block}.nav-links{display:none;position:absolute;top:68px;inset-inline:0;flex-direction:column;gap:0;background:#0b1f3a;border-top:1px solid rgba(255,255,255,.1);padding:6px 20px 12px;box-shadow:0 12px 24px rgba(0,0,0,.25)}.nav-links.open{display:flex}.nav-links li a{display:block;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:16px}.nav-links li:last-child a{border:0}}
 </style>
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/logo-icon-180.png">
@@ -167,6 +171,7 @@ footer b{color:#fff}
       <li><a href="/#contact">تواصل معنا</a></li>
     </ul>
     <a class="lang" href="/en/library/" hreflang="en" lang="en" dir="ltr">English</a>
+    <button class="menu-btn" type="button" aria-label="القائمة" aria-expanded="false">&#9776;</button>
   </div>
 </header>
 
@@ -201,9 +206,11 @@ footer b{color:#fff}
 <footer>
   <div class="container">
     <div><b>كونكت للمقاولات</b> — Connect Contracting</div>
+    <div><a href="/library/">المراجع والكتب</a></div>
     <div>© 2026 جميع الحقوق محفوظة</div>
   </div>
 </footer>
 
+<script>(function(){var b=document.querySelector('.menu-btn'),l=document.querySelector('.nav-links');if(!b||!l)return;b.addEventListener('click',function(){var o=l.classList.toggle('open');b.setAttribute('aria-expanded',o)});l.addEventListener('click',function(e){if(e.target.tagName==='A')l.classList.remove('open')})})();</script>
 </body>
 </html>
